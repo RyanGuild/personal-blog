@@ -1,16 +1,21 @@
 {
-  "name": "frontend",
+  "name": "demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@svgr/cli": "^5.0.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "@types/react-helmet": "^5.0.14",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
+    "react-helmet": "^5.2.1",
+    "react-scripts": "3.3.0",
+    "styled-components": "^4.4.1"
   },
   "scripts": {
+    "dev": "webpack",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -21,7 +26,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.5%",
       "not dead",
       "not op_mini all"
     ],
@@ -30,5 +35,27 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/mocha": "^5.2.7",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "tailwindcss": "^1.1.4",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "author": "",
+  "license": "ISC"
 }
