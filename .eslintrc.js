@@ -10,6 +10,7 @@ module.exports = {
     'prettier',
     'prettier/react',
     'plugin:react/recommended',
+    'plugin:typescript/recommended'
   ],
   'globals': {
     'Atomics': 'readonly',

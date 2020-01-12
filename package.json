@@ -3,23 +3,52 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@svgr/cli": "^5.0.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.0",
-    "@testing-library/user-event": "^7.2.1",
-    "@types/react-helmet": "^5.0.14",
+    "gatsby": "^2.18.12",
+    "gatsby-image": "^2.2.34",
+    "gatsby-plugin-layout": "^1.1.21",
+    "gatsby-plugin-manifest": "^2.2.31",
+    "gatsby-plugin-offline": "^3.0.27",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-plugin-styled-components": "^3.1.17",
+    "gatsby-plugin-typescript": "^2.1.26",
+    "gatsby-source-filesystem": "^2.1.40",
+    "gatsby-transformer-sharp": "^2.3.7",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-github-btn": "^1.1.1",
     "react-helmet": "^5.2.1",
-    "react-scripts": "3.3.0",
     "styled-components": "^4.4.1"
   },
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/mocha": "^5.2.7",
+    "@types/styled-components": "^4.4.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
   "scripts": {
-    "dev": "webpack",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,26 +65,11 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {
-    "@types/jest": "^24.0.25",
-    "@types/mocha": "^5.2.7",
-    "awesome-typescript-loader": "^5.2.1",
-    "babel-plugin-styled-components": "^1.10.6",
-    "eslint": "^6.8.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.17.0",
-    "jest": "^24.9.0",
-    "prettier": "^1.19.1",
-    "prettier-eslint": "^9.0.1",
-    "tailwindcss": "^1.1.4",
-    "typescript": "^3.7.4",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
-  },
+  "keywords": [
+    "gatsby"
+  ],
+  "description": "A Gatsby blog to pull in my social media presence",
+  "main": "index.tsx",
   "author": "",
   "license": "ISC"
 }
